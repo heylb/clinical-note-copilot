@@ -1,0 +1,82 @@
+{
+  "soap": {
+    "subjective": {
+      "content": "Patient reports right knee pain since approximately January, worsened in the past month. Pain rated 6/10 most days, 8/10 after standing. No specific mechanism of injury; patient hikes 4–5 miles weekly. Reports occasional swelling, instability on stairs (giving way / locking sensation). Tried ibuprofen and ice with minor relief. Past medical history negative; no surgeries. Medications: oral contraceptive. Allergies: penicillin (childhood rash). Family history: mother with knee osteoarthritis, father with hypertension.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 220, "end": 530, "text": "Reason for visit: knee pain" },
+        { "start": 600, "end": 920, "text": "Past medical: nothing" }
+      ],
+      "reasoning": "Intake form captures pain history, mechanism, prior treatment, and PMH explicitly. Quotes preserved where present (\"feels unstable on stairs\")."
+    },
+    "objective": {
+      "content": "Patient ambulates without assistance. Mild crepitus right knee on flexion. McMurray equivocal. No effusion today. ROM 0–125° with mild discomfort at end ROM. Lachman negative. Anterior drawer negative.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 980, "end": 1170, "text": "Pt amb without assist. Mild crepitus right knee on flex." }
+      ],
+      "reasoning": "Provider exam findings are documented in the handwritten notes section."
+    },
+    "assessment": {
+      "content": "Likely early osteoarthritis versus meniscal irritation of the right knee.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 1180, "end": 1235, "text": "Imp: likely early OA vs meniscal irritation." }
+      ],
+      "reasoning": "Provider's working diagnosis is stated in the impression line."
+    },
+    "plan": {
+      "content": "1. Weight-bearing AP and lateral right knee X-ray. 2. Consider MRI if X-ray unrevealing and symptoms persist. 3. Naproxen 500 mg BID with food x 2 weeks. 4. PT referral for quadriceps strengthening. 5. Return to clinic in 4 weeks.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 1235, "end": 1410, "text": "Order WB AP+lat right knee. Consider MRI if XR unrevealing & sx persist." }
+      ],
+      "reasoning": "Plan is itemized with specific imaging, medications, dosing, and follow-up timing."
+    }
+  },
+  "icdCodes": [
+    {
+      "code": "M25.561",
+      "description": "Pain in right knee",
+      "confidence": "high",
+      "evidence": { "start": 220, "end": 280, "text": "Reason for visit: knee pain" },
+      "reasoning": "Right knee pain is the chief complaint, explicitly lateralized."
+    },
+    {
+      "code": "M17.11",
+      "description": "Unilateral primary osteoarthritis, right knee",
+      "confidence": "medium",
+      "evidence": { "start": 1180, "end": 1235, "text": "Imp: likely early OA vs meniscal irritation." },
+      "reasoning": "Working diagnosis includes early OA. Confidence medium because diagnosis is provisional pending imaging."
+    },
+    {
+      "code": "S83.281A",
+      "description": "Other tear of medial meniscus, current injury, right knee, initial encounter",
+      "confidence": "low",
+      "evidence": { "start": 1180, "end": 1235, "text": "Imp: likely early OA vs meniscal irritation." },
+      "reasoning": "Meniscal irritation listed as a differential. Code requires confirmed tear; suggest only if MRI confirms."
+    },
+    {
+      "code": "Z82.61",
+      "description": "Family history of arthritis",
+      "confidence": "medium",
+      "evidence": { "start": 870, "end": 905, "text": "mom — osteoarthritis (knees)" },
+      "reasoning": "Family history of knee OA is documented and clinically relevant for risk stratification."
+    }
+  ],
+  "flags": [
+    {
+      "field": "icd:S83.281A",
+      "reason": "Meniscal irritation listed as a differential. Code requires confirmed tear; suggest only if MRI confirms.",
+      "severity": "low",
+      "suggestedAction": "Confirm this code is supported by the documentation."
+    }
+  ],
+  "redactedSpans": [
+    { "type": "name", "span": { "start": 53, "end": 61, "text": "Priya S." } },
+    { "type": "dob", "span": { "start": 67, "end": 82, "text": "DOB: 06/30/19XX" } },
+    { "type": "address", "span": { "start": 110, "end": 138, "text": "412 Elm St, Apt 3B" } },
+    { "type": "phone", "span": { "start": 145, "end": 158, "text": "555.802.9911" } },
+    { "type": "email", "span": { "start": 165, "end": 196, "text": "priya.s.sample@example.com" } }
+  ]
+}

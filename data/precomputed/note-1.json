@@ -1,0 +1,74 @@
+{
+  "soap": {
+    "subjective": {
+      "content": "32-year-old female with history of asthma presents with acute shortness of breath and wheezing for 2 hours. Patient ran out of albuterol inhaler 3 days ago. Symptoms began acutely after running for the bus. Denies chest pain, fever, recent illness, or upper respiratory symptoms.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 91, "end": 117, "text": "CC: SOB x 2 hrs, wheezing" },
+        { "start": 124, "end": 251, "text": "32yo F w/ hx asthma, ran out of albuterol 3d ago. Acute SOB after running for bus. Denies chest pain, fever, recent illness. No URI sx." }
+      ],
+      "reasoning": "Chief complaint and HPI are stated explicitly. Demographics, asthma history, trigger, and absence of red-flag symptoms are all directly documented."
+    },
+    "objective": {
+      "content": "Vitals: BP 128/82, HR 102, RR 24, SpO2 92% on room air, temp 98.4°F. Exam: alert and oriented x3, mild distress, accessory muscle use, diffuse expiratory wheezes bilaterally, no rales.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 252, "end": 312, "text": "Vitals: BP 128/82, HR 102, RR 24, SpO2 92% RA, T 98.4F" },
+        { "start": 313, "end": 416, "text": "Exam: A&Ox3, mild distress, accessory muscle use, diffuse exp wheezes b/l, no rales." }
+      ],
+      "reasoning": "Vitals and physical exam findings are documented explicitly with standard abbreviations expanded."
+    },
+    "assessment": {
+      "content": "Acute asthma exacerbation, moderate severity.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 417, "end": 460, "text": "A: Acute asthma exacerbation, moderate." }
+      ],
+      "reasoning": "Assessment line explicitly states the diagnosis and severity."
+    },
+    "plan": {
+      "content": "Albuterol nebulizer x1 dose, methylprednisolone 60 mg IV, recheck SpO2 in 30 minutes. If patient responds, discharge with albuterol refill and 5-day prednisone taper. Return to clinic if symptoms worsen.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 461, "end": 614, "text": "P: Albuterol neb x1, methylpred 60mg IV, recheck SpO2 in 30. D/c w/ albuterol refill + 5d pred taper if responds. RTC if worse." }
+      ],
+      "reasoning": "Plan is documented as a numbered list with specific medications, doses, and follow-up criteria."
+    }
+  },
+  "icdCodes": [
+    {
+      "code": "J45.901",
+      "description": "Unspecified asthma with (acute) exacerbation",
+      "confidence": "high",
+      "evidence": { "start": 417, "end": 460, "text": "A: Acute asthma exacerbation, moderate." },
+      "reasoning": "Assessment explicitly states acute asthma exacerbation. J45.901 covers unspecified asthma with acute exacerbation; specific phenotype (allergic, severe persistent, etc.) is not documented."
+    },
+    {
+      "code": "R06.02",
+      "description": "Shortness of breath",
+      "confidence": "medium",
+      "evidence": { "start": 91, "end": 117, "text": "CC: SOB x 2 hrs, wheezing" },
+      "reasoning": "Chief complaint includes shortness of breath. Often coded alongside the underlying diagnosis when prominent."
+    },
+    {
+      "code": "Z91.120",
+      "description": "Patient's intentional underdosing of medication regimen due to financial hardship",
+      "confidence": "low",
+      "evidence": { "start": 144, "end": 175, "text": "ran out of albuterol 3d ago" },
+      "reasoning": "Patient ran out of rescue inhaler. Reason not documented; this code is a possible match if non-adherence is confirmed in follow-up."
+    }
+  ],
+  "flags": [
+    {
+      "field": "icd:Z91.120",
+      "reason": "Code requires confirmation of reason for medication non-adherence; not documented in this note.",
+      "severity": "low",
+      "suggestedAction": "Confirm with patient whether financial hardship, access, or other factor caused inhaler lapse."
+    }
+  ],
+  "redactedSpans": [
+    { "type": "name", "span": { "start": 28, "end": 35, "text": "Jane D." } },
+    { "type": "dob", "span": { "start": 37, "end": 53, "text": "DOB 04/12/19XX" } },
+    { "type": "mrn", "span": { "start": 55, "end": 73, "text": "MRN 000-12-3456" } }
+  ]
+}

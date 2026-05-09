@@ -1,0 +1,11 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+Phone Consult — Lightly Cleaned Dictation
+Pt: Robert K., DOB 11/22/19XX
+Phone: (555) 014-2233
+
+So um yeah Mr. K called this afternoon, he's been having this rash on his um forearms, both sides, for about — I think he said about ten days now. He says it started after he was doing yard work, pulling some weeds out of the side of the house. It's red, kind of bumpy, very itchy especially at night, he said it's keeping him up. Um, no fever, no, he doesn't think it's spreading anywhere else. No new soaps or detergents he can think of. He did say he's tried some hydrocortisone cream OTC and it helped a little but not a lot.
+
+Allergies — uh he says NKDA but he's never really had a skin allergy before that he knows of.
+
+I told him this sounds like contact dermatitis, possibly poison ivy or oak given the timing and the yard work. I told him to wash everything that was outside with him — the gloves, the clothes, all of it — and to use a cool compress. I called in triamcinolone 0.1% cream for him to the pharmacy, apply twice daily for up to two weeks. If it spreads to his face or he gets shortness of breath or any swelling he needs to go to the ER. Otherwise call back in a week if not improving.

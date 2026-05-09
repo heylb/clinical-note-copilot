@@ -1,0 +1,28 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+Cardiology Consult Letter
+
+To: Dr. Aisha P., Internal Medicine
+From: Dr. Henry W., Cardiology
+Re: Sofia L., DOB 02/14/19XX, MRN 442-009-118
+
+Dear Dr. P.,
+
+Thank you for referring Ms. L. for evaluation of palpitations and exertional dyspnea. I had the pleasure of seeing her in clinic today.
+
+Ms. L. is a 58-year-old woman with a past medical history significant for hypertension (on lisinopril 20 mg daily), dyslipidemia (on atorvastatin 40 mg daily), and a 25 pack-year smoking history (quit 4 years ago). She reports a 6-month history of intermittent palpitations, occurring 3–5 times per week, lasting seconds to a few minutes. They are not associated with chest pain, but she does describe shortness of breath when climbing two flights of stairs, which is new for her.
+
+On examination, BP was 132/78, HR 72 and regular. Cardiac auscultation revealed a soft systolic murmur at the apex, grade 2/6, without radiation. Lungs were clear. No peripheral edema. ECG today showed normal sinus rhythm with occasional PACs and no ischemic changes.
+
+I have ordered the following:
+- 48-hour Holter monitor
+- Echocardiogram
+- BMP, lipid panel, TSH, and HgbA1c
+
+In the meantime, I have not initiated any new medications. If the Holter reveals significant arrhythmia or the echo demonstrates structural disease, we will discuss further. I have asked her to keep a symptom diary.
+
+I will follow up with her in 4 weeks once results are in. Please do not hesitate to reach out if you have questions.
+
+Warm regards,
+Henry W., MD
+Cardiology

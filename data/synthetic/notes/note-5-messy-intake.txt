@@ -1,0 +1,31 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+NEW PATIENT INTAKE FORM (transcribed)
+Name: Priya S.
+DOB: 06/30/19XX
+MRN: pending
+Address: 412 Elm St, Apt 3B
+Phone: 555.802.9911
+Email: priya.s.sample@example.com
+
+Reason for visit: knee pain
+Which knee? right
+How long? "since like January maybe? got worse last month"
+Pain scale (0-10): 6 most days, 8 after standing
+Mechanism / injury? "no specific injury — i hike a lot"
+Swelling? sometimes
+Locking / giving way? "feels unstable on stairs"
+Prior treatment? "ibuprofen, ice. helps a little"
+
+Past medical: nothing
+Surgeries: none
+Meds: oral contraceptive
+Allergies: penicillin (rash as a child)
+Family hx: mom — osteoarthritis (knees), dad — htn
+
+Lifestyle: hiker (4-5 mi weekly). non-smoker. occasional wine.
+
+— Provider notes (handwritten, transcribed) —
+Pt amb without assist. Mild crepitus right knee on flex. McMurray equivocal. No effusion today. ROM 0–125, mild discomfort end ROM. Lachman neg. Anterior drawer neg.
+Imp: likely early OA vs meniscal irritation. Order WB AP+lat right knee. Consider MRI if XR unrevealing & sx persist.
+Plan: NSAIDs scheduled (naproxen 500mg BID with food x 2 weeks), PT referral for quad strengthening, rtc 4 weeks.

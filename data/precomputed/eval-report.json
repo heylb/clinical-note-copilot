@@ -1,0 +1,170 @@
+{
+  "notes": [
+    {
+      "id": "note-1",
+      "label": "Brief ER triage",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 1.0, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 3,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    },
+    {
+      "id": "note-2",
+      "label": "Detailed psych eval",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 1.0, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 3,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    },
+    {
+      "id": "note-3",
+      "label": "Phone consult dictation",
+      "sectionOverlap": { "subjective": 0.75, "objective": 0.33, "assessment": 1.0, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 3,
+      "calibration": [
+        { "confidence": "medium", "correct": true },
+        { "confidence": "low", "correct": false },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    },
+    {
+      "id": "note-4",
+      "label": "Cardiology consult letter",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 0.5, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 0.67,
+      "phiSpanCount": 5,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "medium", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    },
+    {
+      "id": "note-5",
+      "label": "Messy intake form",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 1.0, "plan": 1.0 },
+      "icdPrecision": 0.75,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 5,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    },
+    {
+      "id": "note-6-variant",
+      "label": "ER triage variant — pediatric",
+      "sectionOverlap": { "subjective": 0.75, "objective": 1.0, "assessment": 1.0, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 2,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    },
+    {
+      "id": "note-7-variant",
+      "label": "Cardiology variant — afib new dx",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 1.0, "plan": 0.5 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 0.0,
+      "phiSpanCount": 0,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "medium", "correct": true }
+      ]
+    },
+    {
+      "id": "note-8-variant",
+      "label": "Empty / non-clinical input",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 1.0, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 0,
+      "calibration": [
+        { "confidence": "low", "correct": true },
+        { "confidence": "low", "correct": true },
+        { "confidence": "low", "correct": true },
+        { "confidence": "low", "correct": true }
+      ]
+    },
+    {
+      "id": "note-9-variant",
+      "label": "Psych follow-up — improved",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 0.67, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 1,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "medium", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    },
+    {
+      "id": "note-10-variant",
+      "label": "Intake variant — diabetes",
+      "sectionOverlap": { "subjective": 1.0, "objective": 1.0, "assessment": 1.0, "plan": 1.0 },
+      "icdPrecision": 1.0,
+      "icdRecall": 1.0,
+      "phiTypeRecall": 1.0,
+      "phiSpanCount": 2,
+      "calibration": [
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true },
+        { "confidence": "high", "correct": true }
+      ]
+    }
+  ],
+  "aggregate": {
+    "avgSectionOverlap": {
+      "subjective": 0.95,
+      "objective": 0.93,
+      "assessment": 0.92,
+      "plan": 0.95
+    },
+    "avgIcdPrecision": 0.975,
+    "avgIcdRecall": 1.0,
+    "avgPhiRecall": 0.867,
+    "calibrationByConfidence": {
+      "high": { "n": 32, "correctRate": 1.0 },
+      "medium": { "n": 4, "correctRate": 1.0 },
+      "low": { "n": 5, "correctRate": 0.8 }
+    }
+  }
+}

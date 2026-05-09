@@ -1,0 +1,18 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+NEW PATIENT INTAKE
+Name: Daniel O.
+DOB: 09/08/19XX
+
+Reason for visit: high blood sugar at recent screening
+Symptoms: increased thirst (polydipsia), urinating more than usual (polyuria), occasional blurry vision, mild fatigue. No weight loss, no nausea.
+Onset: gradual over 3–4 months.
+
+Past medical: hypertension on lisinopril.
+Family hx: mother T2DM, father htn.
+BMI 31. Sedentary office job. Diet self-described as "carb heavy."
+
+— Provider —
+Fingerstick today 248. Repeat A1c 8.2 (prior 7.9). BP 134/82. Exam unremarkable, monofilament intact b/l feet.
+Imp: Type 2 diabetes mellitus, uncontrolled.
+Plan: Start metformin 500 mg BID with meals, titrate to 1000 mg BID over 4 weeks. Diabetes education referral. Diet/exercise counseling. RTC 6 weeks. A1c, lipid panel, BMP, urine albumin/creatinine ratio.

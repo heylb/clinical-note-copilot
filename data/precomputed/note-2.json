@@ -1,0 +1,80 @@
+{
+  "soap": {
+    "subjective": {
+      "content": "41-year-old male software engineer presenting with 12 weeks of mood and concentration difficulties, onset coinciding with a workplace reorganization. Reports difficulty falling asleep progressing to early morning awakening (3:30–4:00 AM), pervasive fatigue, anhedonia (no longer climbing on weekends), and difficulty concentrating at work. Denies frank suicidal ideation but admits passive thoughts of \"not waking up\"; denies plan or intent. No prior psychiatric history or antidepressant trials. No history of mania, psychosis, or substance dependence. Drinks 4–6 units of alcohol per week, primarily weekends. Denies illicit drugs. Family history significant for maternal MDD treated with sertraline. Past medical history: hypothyroidism on levothyroxine 75 mcg daily. NKDA.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 230, "end": 287, "text": "\"I can't focus and I haven't slept right in three months.\"" },
+        { "start": 314, "end": 1239, "text": "Mr. T. is a 41-year-old male, software engineer, presenting for evaluation of mood and concentration concerns." }
+      ],
+      "reasoning": "All subjective elements are explicitly documented in the chief complaint and HPI. Patient quotes preserved."
+    },
+    "objective": {
+      "content": "Mental status exam: well-groomed, cooperative, appropriate eye contact. Speech normal in rate and tone. Mood reported as \"flat.\" Affect congruent, mildly constricted. Thought process linear and goal-directed. No perceptual disturbances. Insight and judgment intact. TSH was 1.8 last month per outside records.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 1357, "end": 1670, "text": "Mental Status Exam:" }
+      ],
+      "reasoning": "MSE is fully documented. The TSH value is referenced from outside records, included as objective data."
+    },
+    "assessment": {
+      "content": "Major Depressive Disorder, single episode, moderate. Differential includes adjustment disorder with depressed mood given temporal relationship to workplace stressor; severity and duration favor MDD. Hypothyroidism is a contributing factor to consider, though TSH was 1.8 last month.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 1684, "end": 2002, "text": "Major Depressive Disorder, single episode, moderate." }
+      ],
+      "reasoning": "Assessment section explicitly states diagnosis and differential reasoning."
+    },
+    "plan": {
+      "content": "1. Initiate sertraline 50 mg PO daily; titrate per response in 2 weeks. 2. Sleep hygiene counseling provided. 3. Refer to CBT therapist; patient open. 4. Repeat TSH in 4 weeks. 5. Safety plan reviewed; crisis line provided; patient agreed to contact if SI worsens. 6. Follow up in 2 weeks.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 2016, "end": 2310, "text": "1. Initiate sertraline 50 mg PO daily" }
+      ],
+      "reasoning": "Plan is enumerated with specific medications, doses, referrals, and follow-up timing."
+    }
+  },
+  "icdCodes": [
+    {
+      "code": "F32.1",
+      "description": "Major depressive disorder, single episode, moderate",
+      "confidence": "high",
+      "evidence": { "start": 1684, "end": 1736, "text": "Major Depressive Disorder, single episode, moderate." },
+      "reasoning": "Diagnosis stated verbatim in the assessment, including episode and severity specifiers."
+    },
+    {
+      "code": "G47.00",
+      "description": "Insomnia, unspecified",
+      "confidence": "medium",
+      "evidence": { "start": 460, "end": 600, "text": "He describes initial difficulty falling asleep, progressing to early morning awakening (3:30–4:00 AM)" },
+      "reasoning": "Insomnia is a prominent and documented symptom. Often coded alongside MDD when sleep disturbance is a clinical focus."
+    },
+    {
+      "code": "E03.9",
+      "description": "Hypothyroidism, unspecified",
+      "confidence": "high",
+      "evidence": { "start": 1255, "end": 1314, "text": "Hypothyroidism, well-controlled on levothyroxine 75 mcg daily" },
+      "reasoning": "Hypothyroidism is documented in past medical history and considered as a contributing factor."
+    },
+    {
+      "code": "F43.21",
+      "description": "Adjustment disorder with depressed mood",
+      "confidence": "low",
+      "evidence": { "start": 1755, "end": 1880, "text": "Differential includes adjustment disorder with depressed mood given the temporal relationship to workplace stressor" },
+      "reasoning": "Listed as a differential, not the primary diagnosis. Include only if clinician decides to bill it."
+    }
+  ],
+  "flags": [
+    {
+      "field": "icd:F43.21",
+      "reason": "Listed as a differential, not the primary diagnosis. Confirm before coding.",
+      "severity": "low",
+      "suggestedAction": "Verify with provider whether to bill differential diagnosis."
+    }
+  ],
+  "redactedSpans": [
+    { "type": "name", "span": { "start": 102, "end": 111, "text": "Marcus T." } },
+    { "type": "dob", "span": { "start": 117, "end": 132, "text": "DOB: 08/03/19XX" } },
+    { "type": "mrn", "span": { "start": 133, "end": 151, "text": "MRN: 778-44-1029" } }
+  ]
+}

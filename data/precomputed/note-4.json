@@ -1,0 +1,89 @@
+{
+  "soap": {
+    "subjective": {
+      "content": "58-year-old woman with hypertension (lisinopril 20 mg daily), dyslipidemia (atorvastatin 40 mg daily), and 25 pack-year smoking history (quit 4 years ago). Reports 6-month history of intermittent palpitations occurring 3–5 times per week, lasting seconds to a few minutes. Palpitations are not associated with chest pain. New onset of shortness of breath when climbing two flights of stairs.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 392, "end": 870, "text": "Ms. L. is a 58-year-old woman with a past medical history significant for hypertension" }
+      ],
+      "reasoning": "Patient demographics, PMH, and HPI are explicitly documented in the consult letter."
+    },
+    "objective": {
+      "content": "BP 132/78, HR 72 and regular. Soft systolic murmur at the apex, grade 2/6, no radiation. Lungs clear. No peripheral edema. ECG showed normal sinus rhythm with occasional PACs and no ischemic changes.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 880, "end": 1180, "text": "On examination, BP was 132/78, HR 72 and regular." }
+      ],
+      "reasoning": "Vitals, cardiac exam, and ECG findings are documented explicitly."
+    },
+    "assessment": {
+      "content": "Palpitations and exertional dyspnea, etiology under investigation. Differential includes paroxysmal arrhythmia versus structural heart disease. ECG today notable only for occasional PACs.",
+      "confidence": "medium",
+      "sourceSpans": [
+        { "start": 1180, "end": 1350, "text": "If the Holter reveals significant arrhythmia or the echo demonstrates structural disease, we will discuss further." }
+      ],
+      "reasoning": "Letter does not contain a formal Assessment section; reasoning is inferred from the diagnostic plan and the conditional language about Holter and echo findings."
+    },
+    "plan": {
+      "content": "1. 48-hour Holter monitor. 2. Echocardiogram. 3. Labs: BMP, lipid panel, TSH, HgbA1c. 4. No new medications initiated at this time. 5. Symptom diary. 6. Follow-up in 4 weeks once results available.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 1184, "end": 1280, "text": "I have ordered the following:" },
+        { "start": 1380, "end": 1480, "text": "I will follow up with her in 4 weeks once results are in." }
+      ],
+      "reasoning": "Plan is itemized with specific tests, medication decisions, and follow-up timing."
+    }
+  },
+  "icdCodes": [
+    {
+      "code": "R00.2",
+      "description": "Palpitations",
+      "confidence": "high",
+      "evidence": { "start": 470, "end": 600, "text": "6-month history of intermittent palpitations, occurring 3–5 times per week" },
+      "reasoning": "Palpitations are a primary documented complaint and the reason for referral."
+    },
+    {
+      "code": "R06.02",
+      "description": "Shortness of breath",
+      "confidence": "high",
+      "evidence": { "start": 660, "end": 780, "text": "shortness of breath when climbing two flights of stairs, which is new for her" },
+      "reasoning": "New-onset exertional dyspnea is documented as a presenting complaint."
+    },
+    {
+      "code": "I10",
+      "description": "Essential (primary) hypertension",
+      "confidence": "high",
+      "evidence": { "start": 472, "end": 540, "text": "hypertension (on lisinopril 20 mg daily)" },
+      "reasoning": "Hypertension is documented in PMH and the patient is on an antihypertensive."
+    },
+    {
+      "code": "E78.5",
+      "description": "Hyperlipidemia, unspecified",
+      "confidence": "high",
+      "evidence": { "start": 540, "end": 600, "text": "dyslipidemia (on atorvastatin 40 mg daily)" },
+      "reasoning": "Dyslipidemia documented and treated."
+    },
+    {
+      "code": "Z87.891",
+      "description": "Personal history of nicotine dependence",
+      "confidence": "medium",
+      "evidence": { "start": 600, "end": 700, "text": "25 pack-year smoking history (quit 4 years ago)" },
+      "reasoning": "Patient has remote smoking history, currently abstinent. Z87.891 captures personal history once in remission."
+    }
+  ],
+  "flags": [
+    {
+      "field": "assessment",
+      "reason": "Letter does not contain a formal Assessment section; reasoning is inferred from the diagnostic plan and the conditional language about Holter and echo findings.",
+      "severity": "medium",
+      "suggestedAction": "Section is sparse or ambiguous. Review against source."
+    }
+  ],
+  "redactedSpans": [
+    { "type": "name", "span": { "start": 28, "end": 39, "text": "Aisha P." } },
+    { "type": "name", "span": { "start": 70, "end": 79, "text": "Henry W." } },
+    { "type": "name", "span": { "start": 95, "end": 103, "text": "Sofia L." } },
+    { "type": "dob", "span": { "start": 105, "end": 121, "text": "DOB 02/14/19XX" } },
+    { "type": "mrn", "span": { "start": 123, "end": 142, "text": "MRN 442-009-118" } }
+  ]
+}

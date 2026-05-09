@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "notes": [
+    {
+      "id": "note-1",
+      "label": "Brief ER triage",
+      "fixture": "note-1-er-triage.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["asthma", "albuterol", "shortness of breath", "wheezing"],
+          "objective": ["BP 128/82", "SpO2 92", "wheezes"],
+          "assessment": ["asthma exacerbation"],
+          "plan": ["albuterol", "methylpred", "60", "IV"]
+        },
+        "icd": {
+          "expected": ["J45"],
+          "acceptable": ["J45.901", "J45.909", "R06.02"]
+        },
+        "phi": {
+          "expectedTypes": ["name", "dob", "mrn"],
+          "minSpans": 3
+        }
+      }
+    },
+    {
+      "id": "note-2",
+      "label": "Detailed psych eval",
+      "fixture": "note-2-psych-eval.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["depress", "sleep", "concentr", "12 weeks", "anhedonia"],
+          "objective": ["mental status", "affect", "thought process"],
+          "assessment": ["Major Depressive Disorder", "moderate"],
+          "plan": ["sertraline", "50 mg", "CBT", "follow up"]
+        },
+        "icd": {
+          "expected": ["F32"],
+          "acceptable": ["F32.1", "F32.0", "G47.00", "E03.9"]
+        },
+        "phi": {
+          "expectedTypes": ["name", "dob", "mrn"],
+          "minSpans": 3
+        }
+      }
+    },
+    {
+      "id": "note-3",
+      "label": "Phone consult dictation",
+      "fixture": "note-3-phone-consult.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["rash", "forearm", "yard work", "10 days"],
+          "objective": ["telephone", "no", "exam"],
+          "assessment": ["contact dermatitis", "poison"],
+          "plan": ["triamcinolone", "wash", "cool compress", "ER"]
+        },
+        "icd": {
+          "expected": ["L23", "L25"],
+          "acceptable": ["L23.7", "L25.5", "L29.9"]
+        },
+        "phi": {
+          "expectedTypes": ["name", "dob", "phone"],
+          "minSpans": 3
+        }
+      }
+    },
+    {
+      "id": "note-4",
+      "label": "Cardiology consult letter",
+      "fixture": "note-4-specialist-letter.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["palpitation", "dyspnea", "lisinopril", "atorvastatin", "smoking"],
+          "objective": ["BP", "132/78", "murmur", "ECG", "PAC"],
+          "assessment": ["palpitation", "dyspnea"],
+          "plan": ["Holter", "Echo", "BMP", "TSH"]
+        },
+        "icd": {
+          "expected": ["R00", "R06", "I10", "E78"],
+          "acceptable": ["R00.2", "R06.02", "I10", "E78.5", "Z87.891"]
+        },
+        "phi": {
+          "expectedTypes": ["name", "dob", "mrn"],
+          "minSpans": 4
+        }
+      }
+    },
+    {
+      "id": "note-5",
+      "label": "Messy intake form",
+      "fixture": "note-5-messy-intake.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["knee", "right", "January", "hike"],
+          "objective": ["crepitus", "McMurray", "Lachman", "ROM"],
+          "assessment": ["osteoarthritis", "meniscal", "knee"],
+          "plan": ["X-ray", "naproxen", "PT", "4 weeks"]
+        },
+        "icd": {
+          "expected": ["M25", "M17"],
+          "acceptable": ["M25.561", "M17.11", "S83.281A", "Z82.61"]
+        },
+        "phi": {
+          "expectedTypes": ["name", "dob", "address", "phone", "email"],
+          "minSpans": 4
+        }
+      }
+    },
+    {
+      "id": "note-6-variant",
+      "label": "ER triage variant — pediatric",
+      "fixture": "note-6-variant.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["fever", "ear pain", "child", "tugging"],
+          "objective": ["temp", "TM", "erythematous"],
+          "assessment": ["otitis media"],
+          "plan": ["amoxicillin", "follow up"]
+        },
+        "icd": {
+          "expected": ["H66"],
+          "acceptable": ["H66.91", "H66.9", "R50.9"]
+        },
+        "phi": {
+          "expectedTypes": ["name", "dob"],
+          "minSpans": 2
+        }
+      }
+    },
+    {
+      "id": "note-7-variant",
+      "label": "Cardiology variant — afib new dx",
+      "fixture": "note-7-variant.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["palpitation", "irregular"],
+          "objective": ["irregularly irregular", "ECG", "atrial fibrillation"],
+          "assessment": ["atrial fibrillation"],
+          "plan": ["anticoagulation", "rate control"]
+        },
+        "icd": {
+          "expected": ["I48"],
+          "acceptable": ["I48.91", "I48.0", "I48.1"]
+        },
+        "phi": {
+          "expectedTypes": ["name"],
+          "minSpans": 1
+        }
+      }
+    },
+    {
+      "id": "note-8-variant",
+      "label": "Empty / non-clinical input",
+      "fixture": "note-8-variant.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": [],
+          "objective": [],
+          "assessment": [],
+          "plan": []
+        },
+        "icd": { "expected": [], "acceptable": [] },
+        "phi": { "expectedTypes": [], "minSpans": 0 },
+        "expectsEmpty": true
+      }
+    },
+    {
+      "id": "note-9-variant",
+      "label": "Psych follow-up — improved",
+      "fixture": "note-9-variant.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["sleep", "improved", "sertraline"],
+          "objective": ["mood", "affect"],
+          "assessment": ["MDD", "improving", "depress"],
+          "plan": ["continue", "sertraline"]
+        },
+        "icd": {
+          "expected": ["F32", "F33"],
+          "acceptable": ["F32.1", "F33.1"]
+        },
+        "phi": { "expectedTypes": ["name"], "minSpans": 1 }
+      }
+    },
+    {
+      "id": "note-10-variant",
+      "label": "Intake variant — diabetes",
+      "fixture": "note-10-variant.txt",
+      "expected": {
+        "soapKeywords": {
+          "subjective": ["diabetes", "polyuria", "polydipsia"],
+          "objective": ["A1c", "BMI", "fingerstick"],
+          "assessment": ["diabetes"],
+          "plan": ["metformin", "diet", "follow up"]
+        },
+        "icd": {
+          "expected": ["E11"],
+          "acceptable": ["E11.9", "E11.65"]
+        },
+        "phi": { "expectedTypes": ["name", "dob"], "minSpans": 2 }
+      }
+    }
+  ]
+}

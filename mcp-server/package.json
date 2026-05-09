@@ -1,0 +1,25 @@
+{
+  "name": "@clinical-note-copilot/mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/mcp-server/src/index.js",
+  "bin": {
+    "clinical-notes-mcp": "dist/mcp-server/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp-server/src/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@anthropic-ai/sdk": "^0.65.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

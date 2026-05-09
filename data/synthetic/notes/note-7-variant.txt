@@ -1,0 +1,12 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+Cardiology — New Diagnosis Visit
+Patient name in chart only.
+
+Subjective: 67-year-old presenting with palpitations and lightheadedness, intermittent over the past month, lasting up to an hour at a time. No syncope. Reports irregular pulse when checking radial.
+
+Objective: BP 138/86, HR 96 and irregularly irregular. ECG: atrial fibrillation with no acute ST changes. No murmurs. Lungs clear.
+
+Assessment: New atrial fibrillation, paroxysmal pattern.
+
+Plan: Initiate anticoagulation per CHA2DS2-VASc (score 3); apixaban 5 mg BID. Rate control with metoprolol 25 mg BID. TSH, BMP, CBC. Echo within 1 week. Cardiology follow-up in 2 weeks.

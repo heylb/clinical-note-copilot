@@ -1,0 +1,63 @@
+{
+  "soap": {
+    "subjective": {
+      "content": "Patient called by phone reporting bilateral forearm rash for approximately 10 days. Onset followed yard work (pulling weeds along the side of the house). Rash is red, bumpy, and intensely itchy, particularly at night, disrupting sleep. Denies fever or spread to other body areas. No new soaps or detergents. Tried OTC hydrocortisone with partial relief. NKDA, no prior known skin allergies.",
+      "confidence": "medium",
+      "sourceSpans": [
+        { "start": 122, "end": 600, "text": "Mr. K called this afternoon, he's been having this rash on his um forearms" }
+      ],
+      "reasoning": "Phone consult dictation with disfluencies; content is clear once cleaned, but exact symptom timeline (\"about ten days\") is paraphrased and approximate."
+    },
+    "objective": {
+      "content": "No physical exam performed; this is a telephone encounter.",
+      "confidence": "low",
+      "sourceSpans": [],
+      "reasoning": "Telephone consult with no documented exam findings. Marked low confidence because the absence of an exam is itself a significant limitation for assessment."
+    },
+    "assessment": {
+      "content": "Likely contact dermatitis, possibly poison ivy or oak given the timing relative to yard work.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 740, "end": 870, "text": "I told him this sounds like contact dermatitis, possibly poison ivy or oak given the timing and the yard work." }
+      ],
+      "reasoning": "Provider verbalized the diagnosis explicitly during the call."
+    },
+    "plan": {
+      "content": "1. Wash all clothing, gloves, and items exposed during yard work. 2. Cool compresses for symptom relief. 3. Triamcinolone 0.1% cream called in to pharmacy; apply twice daily for up to 2 weeks. 4. Return to ER for spread to face, shortness of breath, or swelling. 5. Call back in 1 week if not improving.",
+      "confidence": "high",
+      "sourceSpans": [
+        { "start": 870, "end": 1140, "text": "I told him to wash everything that was outside with him" }
+      ],
+      "reasoning": "Plan is documented in detail including medication, instructions, red flags, and follow-up timing."
+    }
+  },
+  "icdCodes": [
+    {
+      "code": "L23.7",
+      "description": "Allergic contact dermatitis due to plants, except food",
+      "confidence": "medium",
+      "evidence": { "start": 768, "end": 870, "text": "contact dermatitis, possibly poison ivy or oak given the timing and the yard work" },
+      "reasoning": "Provider's working diagnosis is contact dermatitis from plant exposure. L23.7 is the appropriate code if confirmed; L23.9 (unspecified) is an alternative."
+    },
+    {
+      "code": "L29.9",
+      "description": "Pruritus, unspecified",
+      "confidence": "medium",
+      "evidence": { "start": 348, "end": 450, "text": "very itchy especially at night, he said it's keeping him up" },
+      "reasoning": "Pruritus is a primary symptom; often coded alongside the underlying diagnosis when prominent."
+    }
+  ],
+  "flags": [
+    {
+      "field": "objective",
+      "reason": "No physical exam performed; this is a telephone encounter.",
+      "severity": "medium",
+      "suggestedAction": "Section is sparse or ambiguous. Review against source."
+    }
+  ],
+  "redactedSpans": [
+    { "type": "name", "span": { "start": 53, "end": 62, "text": "Robert K." } },
+    { "type": "dob", "span": { "start": 68, "end": 84, "text": "DOB 11/22/19XX" } },
+    { "type": "phone", "span": { "start": 92, "end": 106, "text": "(555) 014-2233" } }
+  ]
+}

@@ -1,0 +1,10 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+ED Triage — Pediatric
+Pt: Liam W., DOB 03/14/20XX (5yo)
+CC: Fever, ear pain x 2 days
+HPI: Mom reports tugging at right ear since yesterday, fussy, low appetite. Tylenol gave partial relief. No vomiting, no neck stiffness.
+Vitals: T 101.4F, HR 118, RR 26, SpO2 99%
+Exam: Alert, in mom's lap. Right TM erythematous and bulging, decreased mobility. Left TM normal. Throat clear, neck supple.
+A: Acute otitis media, right ear.
+P: Amoxicillin 80 mg/kg/day divided BID x 10 days. Tylenol/ibuprofen for pain. RTC if no improvement in 48–72h or symptoms worsen.

@@ -1,0 +1,5 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+This is a test of how the model handles non-clinical input. The text below is a recipe and should produce empty SOAP sections with low confidence and an explanatory flag.
+
+To make sourdough starter, combine equal parts whole-wheat flour and water in a clean jar. Stir vigorously, cover loosely, and let sit at room temperature. Feed daily by discarding half and replacing with fresh flour and water. After 5–7 days the starter should be active and bubbly.

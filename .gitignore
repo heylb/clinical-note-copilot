@@ -1,0 +1,26 @@
+node_modules/
+.next/
+out/
+dist/
+.env
+.env.local
+.env*.local
+.vercel
+*.log
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# Local dev config
+.claude/
+.cursor/
+.idea/
+.vscode/
+
+# pnpm workspace stub written by pnpm prompts
+pnpm-workspace.yaml
+
+# Compiled JS leftovers from MCP server build (real output lives in mcp-server/dist/)
+lib/**/*.js
+lib/**/*.js.map
+lib/**/*.d.ts

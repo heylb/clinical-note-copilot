@@ -1,0 +1,10 @@
+# SYNTHETIC DATA — NOT REAL PATIENT INFORMATION
+
+ED Triage Note
+Pt: Jane D., DOB 04/12/19XX, MRN 000-12-3456
+CC: SOB x 2 hrs, wheezing
+HPI: 32yo F w/ hx asthma, ran out of albuterol 3d ago. Acute SOB after running for bus. Denies chest pain, fever, recent illness. No URI sx.
+Vitals: BP 128/82, HR 102, RR 24, SpO2 92% RA, T 98.4F
+Exam: A&Ox3, mild distress, accessory muscle use, diffuse exp wheezes b/l, no rales.
+A: Acute asthma exacerbation, moderate.
+P: Albuterol neb x1, methylpred 60mg IV, recheck SpO2 in 30. D/c w/ albuterol refill + 5d pred taper if responds. RTC if worse.
