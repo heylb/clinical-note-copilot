@@ -79,7 +79,7 @@ export default function OG() {
             maxWidth: 1000,
           }}
         >
-          Structured SOAP notes from messy clinical text — with the model&rsquo;s reasoning visible.
+          Structured SOAP notes from messy clinical text, with the model's reasoning visible.
         </div>
 
         {/* footer row */}
