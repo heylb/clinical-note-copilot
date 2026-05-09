@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Clinical Note Co-pilot",
     description:
       "Structured SOAP notes from transcripts, with confidence and source attribution. Web app + MCP server.",
-    images: ["/og.png"],
+    // Image is auto-detected from app/opengraph-image.tsx
   },
 };
 
