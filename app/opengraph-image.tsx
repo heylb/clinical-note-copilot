@@ -19,22 +19,22 @@ export default function OG() {
           display: "flex",
           flexDirection: "column",
           padding: "72px 80px",
-          background:
-            "radial-gradient(circle at 50% 0%, rgba(124,242,197,0.10) 0%, transparent 60%), #07080a",
+          backgroundColor: "#07080a",
+          backgroundImage:
+            "radial-gradient(circle at 50% 0%, rgba(124,242,197,0.12) 0%, rgba(7,8,10,0) 60%)",
           color: "#e7eaf0",
-          fontFamily: "Inter, ui-sans-serif, system-ui",
           position: "relative",
         }}
       >
-        {/* subtle grid */}
+        {/* accent rule */}
         <div
           style={{
             position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "linear-gradient(to right, rgba(31,36,44,0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(31,36,44,0.5) 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
-            opacity: 0.7,
+            top: 0,
+            left: 80,
+            right: 80,
+            height: 2,
+            background: "linear-gradient(to right, #7cf2c5, rgba(124,242,197,0))",
           }}
         />
 
